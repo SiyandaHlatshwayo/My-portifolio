@@ -1,5 +1,19 @@
 <!DOCTYPE html>
-
+<nav class="navbar">
+  <div class="logo">Siyanda Hlatshwayo</div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="project.html">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="certificates.html">Certificates</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
 <html lang="en">
 <head>
@@ -10,19 +24,7 @@
 </head>
 <body>
 
-  <!-- Shared Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Siyanda Hlatshwayo</div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">About</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="certificates.html">Certificates</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+
 
   <!-- About Section -->
   <section class="intro">
@@ -40,6 +42,15 @@
       </div>
     </div>
   </section>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
 
 </body>
 </html>

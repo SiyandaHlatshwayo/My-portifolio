@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+    <nav class="navbar">
+  <div class="logo">Siyanda Hlatshwayo</div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="project.html">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="certificates.html">Certificates</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,18 +23,6 @@
 </head>
 <body>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">Siyanda Hlatshwayo</div>
-      <ul class="nav-links">
-        <li><a href="index.html">About</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="skills.html" class="active">Skills</a></li>
-        <li><a href="certificates.html">Certificates</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <section class="skills">
     <h2>My Skills</h2>
@@ -50,6 +53,15 @@
       </div>
     </div>
   </section>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
 
 </body>
 </html>
